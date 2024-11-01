@@ -1,0 +1,196 @@
+/**
+ * All of the CSS for your dashboard-specific functionality should be
+ * included in this file.
+ */
+
+#wp-developers-homepage-settings .nav-tab-wrapper .dashicons {
+	position: relative;
+	bottom: -0.1em;
+	font-size: 1.3em;
+}
+
+/* Refresh Buttons
+--------------------------------------------- */
+.wdh-refresh-button-container {
+	float: right;
+}
+
+#wp-developers-homepage-settings .spinner {
+	display: none;
+	float: none;
+}
+
+#wp-developers-homepage-settings .spinner.is-active {
+	display: inline-block;
+}
+
+.wdh-loading-div {
+	margin: 1em 0;
+}
+
+.wdh-loading-div span {
+	margin-top: 0;
+	vertical-align: middle;
+}
+
+/* Content - Sub Tabs
+--------------------------------------------- */
+.wdh-ajax-container {
+	margin: 1em 0;
+}
+
+.wdh-sub-tab-nav {
+	font-size: 0;
+	border-bottom: none;
+}
+
+.wdh-sub-tab-nav .button {
+	margin: 0 !important;
+}
+
+.wdh-sub-tab-nav .button:first-child {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.wdh-sub-tab-nav .button:not(:first-child) {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+#wp-developers-homepage-settings .nav-tab-wrapper .button .dashicons {
+	bottom: 0.09em;
+	width: 1.1em;
+	height: auto;
+	vertical-align: middle;
+}
+
+.wdh-sub-tab-container {
+	margin: 1em 0;
+}
+
+.wdh-sub-tab {
+	display: none;
+}
+
+.wdh-sub-tab.active {
+	display: block;
+}
+
+/* Content - Metaboxes
+--------------------------------------------- */
+.wp-developers-homepage-metaboxes {
+	overflow: hidden;
+	margin-top: 1em;
+}
+
+.wdh-ticket-count {
+	float: right;
+	margin-right: 1em;
+}
+
+.dashicons.wdh-resolved,
+li.wdh-resolved .dashicons {
+	color: #7ad03a;
+}
+
+.dashicons.wdh-unresolved,
+li.wdh-unresolved .dashicons,
+.wdh-needs-update {
+	color: #dd3d36;
+}
+
+.wp-developers-homepage-metaboxes .postbox:last-child {
+	margin-bottom: 0;
+}
+
+/* Content - Table
+--------------------------------------------- */
+#wp-developers-homepage-settings .tablenav {
+	display: none;
+}
+
+#wp-developers-homepage-settings .wp-list-table .sorting-indicator {
+	display: block;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+#wp-developers-homepage-settings .wp-list-table th.sorted .sorting-indicator,
+#wp-developers-homepage-settings .wp-list-table a:hover .sorting-indicator {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+/* Slider Control
+--------------------------------------------- */
+/* The switch - the box around the slider */
+.wpdh-switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 25px;
+}
+
+/* The switch text beside the switch */
+.wpdh-switch-text {
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  margin-left: 1em;
+}
+
+/* Hide default HTML checkbox */
+.wpdh-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.wpdh-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.wpdh-slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .wpdh-slider {
+  background-color: #2196F3;
+}
+
+input:focus + .wpdh-slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .wpdh-slider:before {
+  -webkit-transform: translateX(14px);
+  -ms-transform: translateX(14px);
+  transform: translateX(14px);
+}
+
+/* Rounded sliders */
+.wpdh-slider.wpdh-round {
+  border-radius: 14px;
+}
+
+.wpdh-slider.wpdh-round:before {
+  border-radius: 50%;
+}
